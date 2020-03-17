@@ -1,0 +1,62 @@
+{
+  "name": "scene-control-adapter",
+  "display_name": "Scene Control",
+  "version": "0.1.0",
+  "description": "Scene control adapter plugin for Mozilla WebThings Gateway",
+  "author": "Mozilla IoT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "mozilla",
+    "iot",
+    "adapter",
+    "scene"
+  ],
+  "homepage": "https://github.com/mozilla-iot/scene-control-adapter",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mozilla-iot/scene-control-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mozilla-iot/scene-control-adapter/issues"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SHA256SUMS",
+    "manifest.json",
+    "index.js"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0"
+  },
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "plugin": true,
+    "exec": "{nodeLoader} {path}",
+    "config": {
+      "scenes": []
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "scenes": {
+          "type": "array",
+          "title": "Scenes",
+          "description": "List of scene names to generate",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
