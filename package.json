@@ -1,20 +1,20 @@
 {
   "name": "scene-control-adapter",
-  "version": "0.1.1",
-  "description": "Scene control adapter plugin for Mozilla WebThings Gateway",
-  "author": "Mozilla IoT",
+  "version": "0.1.2",
+  "description": "Scene control adapter plugin for WebThings Gateway",
+  "author": "WebThingsIO",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
-  "homepage": "https://github.com/mozilla-iot/scene-control-adapter",
+  "homepage": "https://github.com/WebThingsIO/scene-control-adapter",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozilla-iot/scene-control-adapter.git"
+    "url": "https://github.com/WebThingsIO/scene-control-adapter.git"
   },
   "bugs": {
-    "url": "https://github.com/mozilla-iot/scene-control-adapter/issues"
+    "url": "https://github.com/WebThingsIO/scene-control-adapter/issues"
   },
   "files": [
     "LICENSE",
